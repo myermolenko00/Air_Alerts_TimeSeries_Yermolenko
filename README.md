@@ -3,6 +3,11 @@
 An enterprise-grade forecasting pipeline engineered to predict daily air raid alert distributions across Ukraine's four primary macro-regions (*West, East, Central, South*) out to December 31, 2026. The architecture utilizes a **SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous Regressors)** state-space model paired with stochastic heavy-tailed shock vectors to simulate real-world tactical conflict escalation spikes.
 
 ## 🖼️ Dashboard Showcase
+
+> **📊 Data Ingestion Note:** The raw dataset `official_data_en.csv` is excluded from direct Git commits due to GitHub file size limitations. The KSE evaluation panel can download the historical source data file directly from the [Project Releases Page](https://github.com/myermolenko00/Air_Alerts_TimeSeries_Yermolenko/releases/tag/Project_Evaluation_Dataset). Please place the downloaded file into the project root directory before executing `main.py`.
+
+Initial source of data is: https://github.com/Vadimkin/ukrainian-air-raid-sirens-dataset/blob/main/datasets/official_data_en.csv
+
 Below is the output generated automatically by the pipeline execution engine, displaying historical actuals alongside predicted structural baselines, kinetic peak trends, and rolling backtest performance cards:
 
 ![Macro-Regional Air Raid Forecast Dashboard](macro_regional_forecast.png)
